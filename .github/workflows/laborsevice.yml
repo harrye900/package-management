@@ -23,4 +23,11 @@ jobs:
           print(platform.processor())
         shell: python
 
+  laborserice_window:
+     runs-on: windows-latest
+
+     steps:
+      - name: directory
+        run: pwd
+        shell: bash
     
