@@ -9,25 +9,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: echo string
-        run: echo "hello"
 
-      - name: Multiple line string
-        run: |
+     - name: checkout
+       uses: actions/checkout@v1
+     - name: Multiple line string
+       run: |
           pwd
           node -v
           ls -a
-      - name: python command
-        run: |
-          import platform
-          print(platform.processor())
-        shell: python
+       
+      # - name: echo string
+      #   run: echo "hello"
 
-  laborserice_window:
-     runs-on: windows-latest
-     needs: "laborservice"
-     steps:
-      - name: directory
-        run: pwd
-        shell: bash
+  #     - name: Multiple line string
+  #       run: |
+  #         pwd
+  #         node -v
+  #         ls -a
+  #     - name: python command
+  #       run: |
+  #         import platform
+  #         print(platform.processor())
+  #       shell: python
+
+  # laborserice_window:
+  #    runs-on: windows-latest
+  #    needs: "laborservice"
+  #    steps:
+  #     - name: directory
+  #       run: pwd
+  #       shell: bash
     
