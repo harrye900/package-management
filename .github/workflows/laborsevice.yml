@@ -25,7 +25,7 @@ jobs:
 
   laborserice_window:
      runs-on: windows-latest
-
+     needs: "laborservice"
      steps:
       - name: directory
         run: pwd
