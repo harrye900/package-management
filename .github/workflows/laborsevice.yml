@@ -5,15 +5,17 @@ on:
   push:
 
 jobs:
-  runs-on: ubuntu-latest
+  laborservice:
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: echo string
-      run: echo "hello"
+    steps:
+      - name: echo string
+        run: echo "hello"
 
-    - name: Multiple line string
-      run: |
-        pwd
-        node -v
-        ls -a
+      - name: Multiple line string
+        run: |
+          pwd
+          node -v
+          ls -a
+
 
